@@ -1,0 +1,234 @@
+/* ══════════════════════════════════════════════════════════════════
+   theme-overrides.css  —  LegalEdge CRM
+   Import AFTER style.css in App.jsx
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ══════════════════════════════════════════════════════════════════
+   1. SEARCH BAR — simple, clean, like topbar search
+   ══════════════════════════════════════════════════════════════════ */
+
+/* Remove unwanted white/grey inner background on search inputs (global) */
+input[type="search"],
+input.search-input,
+.search-input input,
+.search-input-wrap input,
+.topbar-search input,
+.search-box input,
+.sidebar-search input {
+  background-color: transparent !important;
+}
+
+
+/* Ensure search wrappers stay transparent (parent controls background) */
+.search-input,
+.search-input-wrap,
+.input-wrapper,
+.input-container,
+.search-box,
+.topbar-search,
+.sidebar-search {
+  background: inherit !important;
+}
+
+/* Prevent hover from forcing a white background */
+
+
+.search-box input::placeholder,
+.topbar-search input::placeholder,
+.sidebar-search input::placeholder,
+input[type="search"]::placeholder {
+  color:   #9ca3af !important;
+  opacity: 1 !important;
+}
+
+.search-box:focus-within,
+.topbar-search:focus-within,
+.sidebar-search:focus-within,
+input[type="search"]:focus {
+  border-color: #2563eb !important;
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.2) !important;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   2. ACTION BUTTONS (Edit, Delete, etc) — transparent, no background
+   ══════════════════════════════════════════════════════════════════ */
+
+.btn-icon,
+.action-btns .btn-icon,
+.btn-icon.edit,
+.btn-icon.delete,
+.btn-icon.view {
+  background:   transparent !important;
+  border:       1px solid #e5e7eb !important;
+  color:        #0f2440 !important;
+  box-shadow:   none !important;
+}
+
+/* Primary/secondary/accent/danger button base styles are defined in style.css. */
+
+/* ══════════════════════════════════════════════════════════════════
+   3. REMOVE ALL HOVER COLOR CHANGES
+   Hover state = normal state, no background/color change
+   ══════════════════════════════════════════════════════════════════ */
+
+/* All buttons */
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-accent:hover,
+.btn-danger:hover,
+.btn-create:hover,
+.btn-save:hover,
+.btn-icon:hover,
+button.btn-primary:hover,
+button.btn-secondary:hover,
+button.btn-accent:hover,
+button.btn-danger:hover,
+button.btn-create:hover,
+button.btn-save:hover {
+  background:      inherit !important;
+  color:           inherit !important;
+  border-color:    inherit !important;
+  box-shadow:      none !important;
+  transform:       none !important;
+  text-decoration: none !important;
+  transition:      none !important;
+}
+
+/* Action icon hover */
+.btn-icon:hover,
+.btn-icon.edit:hover,
+.btn-icon.delete:hover,
+.btn-icon.view:hover {
+  background:   transparent !important;
+  color:        #0f2440 !important;
+  border-color: #e5e7eb !important;
+  box-shadow:   none !important;
+  transform:    none !important;
+  transition:   none !important;
+}
+
+/* Links */
+a:hover {
+  color:           inherit !important;
+  background:      transparent !important;
+  text-decoration: none !important;
+  transition:      none !important;
+}
+
+/* Table rows */
+.data-table tbody tr:hover {
+  background: inherit !important;
+  transition: none !important;
+}
+
+/* Nav & sidebar items */
+.nav-item:hover,
+.nav-group-header:hover,
+.nav-sub-item:hover,
+.flyout-item:hover,
+.settings-nav-item:hover,
+.sidebar-user:hover,
+.sidebar-toggle:hover {
+  background: inherit !important;
+  color:      inherit !important;
+  transition: none !important;
+}
+
+/* Dropdowns & menus */
+.user-menu-item:hover,
+.notif-item:hover,
+.notif-footer:hover,
+.create-option:hover {
+  background:  inherit !important;
+  color:       inherit !important;
+  transition:  none !important;
+}
+
+/* Filter tabs */
+.filter-tab:hover {
+  background:   inherit !important;
+  color:        inherit !important;
+  border-color: inherit !important;
+  transition:   none !important;
+}
+
+/* Cards */
+.card:hover,
+.stat-card:hover,
+.deal-card:hover,
+.product-card:hover,
+.template-card:hover,
+.content-card:hover,
+.marketplace-card:hover,
+.playbook-card:hover,
+.snippet-card:hover,
+.doc-card:hover,
+.kanban-card:hover {
+  background:   inherit !important;
+  box-shadow:   inherit !important;
+  transform:    none !important;
+  border-color: inherit !important;
+  transition:   none !important;
+}
+
+/* Topbar icons */
+/* 
+.topbar-icon:hover,
+.topbar-avatar:hover,
+.topbar-hamburger:hover,
+.breeze-topbar-btn:hover {
+  background:   inherit !important;
+  color:        inherit !important;
+  border-color: inherit !important;
+  transition:   none !important;
+}
+*/
+
+/* List items */
+.inbox-item:hover,
+.call-log-item:hover,
+.meeting-item:hover,
+.activity-item:hover {
+  background: inherit !important;
+  transition: none !important;
+}
+
+/* Misc buttons */
+.page-btn:hover,
+.tab:hover,
+.chart-tab:hover,
+.ai-suggestion:hover,
+.breeze-suggest-btn:hover {
+  background:   inherit !important;
+  color:        inherit !important;
+  border-color: inherit !important;
+  transition:   none !important;
+}
+
+/* Contact cell */
+.contact-cell-info b:hover {
+  color:           inherit !important;
+  text-decoration: none !important;
+}
+
+/* Modal close */
+.modal-close:hover {
+  color:      inherit !important;
+  transition: none !important;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   4. INPUT FIELDS — default browser styling
+   ══════════════════════════════════════════════════════════════════ */
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+textarea,
+select {
+  color:            revert !important;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"])::placeholder,
+textarea::placeholder {
+  color:   revert !important;
+  opacity: revert !important;
+}

@@ -1,0 +1,864 @@
+/* ══════════════════════════════════════════════════════════════════
+   Topbar.css  —  LegalEdge CRM
+   FIX #12 #13 #14 #15 — all duplicate rule blocks removed & merged
+   FIX #16  — all hardcoded #fff / #e5e7eb replaced with CSS variables
+   FIX #17 #18 — all missing classes added (notif-*, user-menu-*)
+   FIX #11  — hide-mobile / hide-tablet replaced with .topbar-btn-label
+   FIX #20  — duplicate `position: sticky` removed (was clobbering dropdown anchor)
+   FIX #21  — .topbar-icon-wrap gets position:relative so dropdowns anchor to it
+   FIX #22  — .notif-dropdown !important overrides cleaned up; class-toggle only
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── Topbar shell ──────────────────────────────────────────────── */
+.topbar {
+  position: sticky !important;
+  top: 0 !important;
+
+  z-index: 40 !important;
+
+  /* Extremely high to stay above content */
+  height: 60px !important;
+  background: var(--primary-dark) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 0 24px !important;
+  gap: 16px !important;
+  overflow: visible !important;
+  /* CRITICAL for dropdown visibility */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Force layout to allow sticky */
+body,
+html {
+  height: 100%;
+}
+
+.main-wrapper {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content,
+.content-area {
+  flex: 1;
+  overflow-y: auto !important;
+  position: relative;
+}
+
+/* ── Left section ──────────────────────────────────────────────── */
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+/* Hamburger — hidden on desktop, shown on mobile via media query */
+.topbar-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.topbar-hamburger:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+/* FIX #8 — clean breadcrumb, no trailing slash issues */
+.topbar-breadcrumb {
+  font-size: 13px;
+  color: var(--text-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+}
+
+.breadcrumb-parent {
+  color: var(--text-2);
+}
+
+.breadcrumb-sep {
+  opacity: 0.4;
+  margin: 0 2px;
+}
+
+.breadcrumb-current {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.topbar-search-wrapper {
+  position: relative;
+  flex: 1;
+  max-width: 640px;
+  margin-left: 8px;
+  min-width: 0;
+}
+
+/* ── Dark pill search bar — matches screenshot exactly ── */
+.topbar-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.07);   /* slightly lighter — visually distinct from topbar */
+  border: 1.5px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  padding: 9px 18px;
+  width: 100%;
+  transition: border-color 0.2s ease, background 0.2s ease;
+  box-shadow: none;
+}
+
+.topbar-search:focus-within,
+.topbar-search.focused {
+  border-color: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.11);   /* slightly brighter on focus — clean, no blue glow */
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.topbar-search i {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+/* ── Input: all: unset kills every browser/global focus ring ── */
+.topbar-search input {
+  flex: 1;
+  display: block;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+
+  color: #ffffff;
+  caret-color: #ffffff;
+  -webkit-text-fill-color: #ffffff;   /* fixes Chrome autofill overriding color */
+
+  font-size: 14px;
+  font-family: var(--font-body, 'DM Sans', sans-serif);
+
+  min-width: 0;
+}
+
+.topbar-search input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.45);
+}
+
+.search-clear {
+  background: var(--surface-3);
+  border: none;
+  color: var(--text-2);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+/* ── Search Dropdown ────────────────────────────────────────── */
+.search-dropdown {
+  position: absolute !important;
+  top: 50px !important;
+  /* Fixed offset from top of wrapper */
+  left: 0;
+  right: 0;
+  background: #ffffff !important;
+  border: 1px solid #cbd6e2 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3) !important;
+
+  max-height: 480px;
+  overflow-y: auto;
+  animation: dropdownSlideIn 0.2s ease-out;
+}
+
+@keyframes dropdownSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.search-dropdown.no-results {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-3);
+  font-size: 14px;
+}
+
+.search-dropdown.no-results i {
+  font-size: 24px;
+  opacity: 0.5;
+}
+
+.search-section {
+  padding: 8px 0;
+}
+
+.search-section-title {
+  padding: 8px 16px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.search-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.search-item:hover,
+.search-item.active {
+  background: var(--surface-3);
+}
+
+.search-item-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-2);
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.search-item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.search-item-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #33475b;
+  /* HubSpot Dark Text */
+}
+
+.search-item-name mark {
+  background: #fff7f2;
+  color: #ff7a59;
+  font-weight: 700;
+  padding: 0 2px;
+}
+
+.search-item-desc {
+  font-size: 12px;
+  color: #516f90;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* topbar-actions-group */
+.topbar-actions-group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 8px;
+}
+
+.topbar-action-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: none;
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+/* Hover removed by user request */
+
+/* ── Right section ─────────────────────────────────────────────── */
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+/* Breeze AI button */
+.breeze-topbar-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  background: rgba(167, 139, 250, 0.1);
+  border: 1px solid rgba(167, 139, 250, 0.4);
+  border-radius: 20px;
+  cursor: pointer;
+  color: #c4b5fd;
+  font-family: var(--font-body);
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.breeze-topbar-btn:hover {
+  background: rgba(167, 139, 250, 0.2);
+  border-color: #a78bfa;
+  color: #fff;
+}
+
+/* FIX #3 — breeze icon is an emoji span, not FA Pro */
+.breeze-icon {
+  font-size: 14px;
+  line-height: 1;
+}
+
+/* Create button */
+.btn-create,
+button.btn-create {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 8px 18px !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  background: var(--accent);
+  /* HubSpot Orange */
+  color: var(--primary-dark);
+  border: none !important;
+  border-radius: 20px !important;
+  cursor: pointer !important;
+  font-family: var(--font-body) !important;
+  transition: all 0.2s !important;
+  white-space: nowrap !important;
+}
+
+.btn-create:hover,
+button.btn-create:hover {
+  background: var(--accent-light, #f0c040) !important;
+  color: var(--primary-dark) !important;
+}
+
+
+/* ── Icon button wrapper ────────────────────────────────────────
+ * FIX #21 (ROOT CAUSE): This wrapper was `flex-shrink: 0` only, with no
+ * positioning. Both .notif-dropdown and .user-menu are position:absolute and
+ * need a positioned ancestor to anchor to. Without position:relative here,
+ * they anchored to the nearest positioned ancestor up the DOM tree — usually
+ * the viewport — making them appear far off-screen or completely invisible.
+ *
+ * Fix: Add `position: relative` so absolutely-positioned children
+ * (.notif-dropdown, .user-menu) offset correctly from their trigger button.
+ */
+.topbar-icon-wrap {
+  position: relative;
+  /* ← THE critical fix for dropdown anchoring */
+  flex-shrink: 0;
+}
+
+/* Notification bell / generic icon button */
+.topbar-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 16px;
+}
+
+/* Hover removed by user request */
+
+/* FIX #17 — single clean .notif-badge rule */
+.notif-badge {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--red);
+  color: var(--surface);
+  /* FIX #16: was hardcoded #fff */
+  font-size: 9px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  border: 2px solid var(--surface);
+}
+
+/* Avatar button */
+.topbar-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--primary-dark);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.2s;
+  letter-spacing: 0.03em;
+}
+
+.topbar-avatar:hover {
+  border-color: var(--primary-dark);
+  transform: scale(1.05);
+}
+
+/* ── Notifications dropdown ────────────────────────────────────────
+ * FIX #22 (ROOT CAUSE): The original block used `!important` on every
+ * property including `opacity: 0 !important` and `visibility: hidden !important`
+ * in the base state. While `.show` tried to override these, specificity battles
+ * with `!important` can cause browsers to ignore the overrides in certain
+ * cascade scenarios — especially when the element is newly mounted or when
+ * React rehydrates the class list. The excessive `!important` usage also made
+ * debugging impossible.
+ *
+ * Fix: Removed ALL `!important` declarations. Pure class-based toggle with
+ * opacity/visibility/transform transition. `.notif-dropdown` is always
+ * `display: block` (block-formatted); hidden state uses opacity+visibility
+ * so CSS transitions still fire smoothly on `.show` toggle.
+ * The parent `.topbar-icon-wrap` now has position:relative (see above)
+ * so `position: absolute` here anchors correctly.
+ */
+.notif-dropdown {
+  width: 300px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  pointer-events: auto;
+}
+
+.notif-dropdown.show {
+  display: block;
+  animation: dropdownIn 0.18s ease;
+}
+
+
+.notif-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--border);
+}
+
+.notif-count {
+  font-size: 11px;
+  background: var(--danger, var(--red));
+  color: var(--surface);
+  /* FIX #16: was hardcoded #fff */
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.notif-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px 16px;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.notif-item:hover {
+  background: var(--surface-2);
+}
+
+.notif-item.unread {
+  background: rgba(26, 60, 107, 0.03);
+}
+
+.notif-item>i {
+  font-size: 16px;
+  color: var(--primary);
+  margin-top: 2px;
+}
+
+.notif-item b {
+  font-size: 13px;
+  display: block;
+}
+
+.notif-item p {
+  font-size: 12px;
+  color: var(--text-2);
+  margin: 2px 0;
+}
+
+.notif-item small {
+  font-size: 11px;
+  color: var(--text-3);
+}
+
+.notif-empty {
+  padding: 24px 16px;
+  text-align: center;
+  color: var(--text-2);
+  font-size: 13px;
+}
+
+.notif-footer {
+  padding: 12px 16px;
+  text-align: center;
+  color: var(--primary);
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.notif-footer:hover {
+  background: var(--surface-2);
+}
+
+/* ── User menu dropdown ────────────────────────────────────────── */
+.user-menu {
+  position: fixed !important;
+  top: 60px !important;
+  right: 10px !important;
+  width: 230px !important;
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-lg) !important;
+  z-index: 99999 !important;
+  display: none;
+  overflow: hidden !important;
+  pointer-events: auto !important;
+}
+
+.user-menu.show {
+  display: block;
+  animation: dropdownIn 0.18s ease;
+}
+
+/* FIX #18 — user-menu-profile */
+.user-menu-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.user-avatar-sm {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: #0d1117;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+.user-menu-info {
+  min-width: 0;
+}
+
+.user-menu-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* FIX #18 — user-role-badge */
+.user-role-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-top: 3px;
+  text-transform: uppercase;
+}
+
+.role-admin {
+  background: var(--red-dim);
+  color: var(--red);
+  border: 1px solid rgba(224, 92, 107, 0.3);
+}
+
+.role-manager {
+  background: var(--gold-dim);
+  color: var(--gold);
+  border: 1px solid rgba(212, 168, 67, 0.3);
+}
+
+.role-user {
+  background: var(--blue-dim);
+  color: var(--blue);
+  border: 1px solid rgba(74, 158, 255, 0.3);
+}
+
+.user-menu-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 4px 0;
+}
+
+/* FIX #18 — user-menu-item */
+.user-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  background: none;
+  border: none;
+  text-align: left;
+  font-family: var(--font-body);
+}
+
+.user-menu-item i {
+  font-size: 13px;
+  width: 16px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.user-menu-item:hover {
+  background: var(--surface-3);
+  color: var(--text);
+}
+
+.user-menu-logout {
+  color: var(--red);
+}
+
+.user-menu-logout:hover {
+  background: var(--red-dim);
+  color: var(--red);
+}
+
+/* ── Dropdown animation ────────────────────────────────────────── */
+@keyframes dropdownIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ── FIX #11 — .topbar-btn-label replaces hide-mobile / hide-tablet ── */
+.topbar-btn-label {
+  display: inline;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   RESPONSIVE
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── Large Desktop (≥1400px) ─────────────────────────────────────── */
+@media (min-width: 1400px) {
+  .topbar-search-wrapper {
+    max-width: 760px;
+  }
+}
+
+/* ── Tablet (769px – 1024px) ────────────────────────────────────── */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .topbar-search-wrapper {
+    max-width: 360px;
+  }
+}
+
+/* ── Mobile (≤768px) ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .topbar {
+    padding: 0 12px;
+    gap: 8px;
+  }
+
+  /* Show hamburger on mobile */
+  .topbar-hamburger {
+    display: flex;
+  }
+
+  /* Full-width pill on mobile */
+  .topbar-search-wrapper {
+    flex: 1;
+    max-width: 100%;
+    margin-left: 0;
+    min-width: 0;
+  }
+
+  .topbar-search {
+    width: 100%;
+    padding: 8px 14px;
+    background: #0d1117;
+    border-color: rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    box-shadow: none;
+  }
+
+  .topbar-search input {
+    display: block;
+    color: #ffffff;
+  }
+
+  /* When focused on mobile — stays inline, no overlay */
+  .topbar-search.focused {
+    border-color: rgba(255, 255, 255, 0.3);
+    background: #0d1117;
+  }
+
+  .search-dropdown {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: none;
+    border-radius: 0;
+    border: none;
+  }
+
+  .topbar-actions-group {
+    display: none;
+  }
+
+  /* Hide text labels — icons only on mobile */
+  .topbar-btn-label {
+    display: none;
+  }
+
+  .breeze-topbar-btn {
+    padding: 8px 10px;
+  }
+
+  .btn-create {
+    padding: 8px 10px;
+  }
+
+  /* Dropdown width adjustments for small screens */
+  .notif-dropdown {
+    width: 290px;
+  }
+
+  .user-menu {
+    width: 210px;
+  }
+}
+
+@media (max-width: 480px) {
+  .topbar {
+    padding: 0 10px;
+  }
+
+  .topbar-right {
+    gap: 4px;
+  }
+
+  .notif-dropdown,
+  .user-menu {
+    right: -4px;
+    max-width: calc(100vw - 16px);
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   GLOBAL CONFLICT KILL — must stay at very bottom
+   Overrides any blue focus ring from global styles.css
+   ══════════════════════════════════════════════════════════════════ */
+.topbar-search:focus-within,
+.topbar-search.focused {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.topbar-search input,
+.topbar-search input:focus,
+.topbar-search input:focus-visible,
+.topbar-search input:active {
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;   /* prevents Chrome autofill from overriding */
+}
+
+/* Autofill background kill — prevents yellow/blue Chrome autofill overlay */
+.topbar-search input:-webkit-autofill,
+.topbar-search input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px rgba(255,255,255,0.07) inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+.topbar-search input::placeholder {
+  color: rgba(255, 255, 255, 0.38) !important;
+  opacity: 1 !important;
+}

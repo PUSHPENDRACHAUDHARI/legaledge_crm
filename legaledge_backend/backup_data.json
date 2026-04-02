@@ -1,0 +1,2025 @@
+[
+{
+  "model": "sessions.session",
+  "pk": "4afi8hy1q3kjdv24kxnzoham56vrxpzx",
+  "fields": {
+    "session_data": ".eJwFwUsKgzAYhdG9OP4GufdPYuxWShHxAZkotM5K995zvsN7X7b5vO5-9HW5-3XOffsMj6cwQaZQaSghIaNAGRVU0YgamnDCwsaBMy644hE3PBGJEGEiXr8_v_4a7w:1w6Swt:qo9HDqHK0-M0O232mNOTbZ3MD2rmR2oItXgTsT1HV1w",
+    "expire_date": "2026-04-11T12:39:31.086Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "5egd15sufzzxzk8ojz9rdmol7vngxqrp",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln4l40p6TmDtfZ6cQDZUpxUiLuTSCmgnZn33iLgupSw9jyHicRFgDj9sojpmesu6IH13mRqdZmnKPdEHrbLW6P8uh7t30HBXrY1K4OGrALNbsh28Ba8g7N2nPTGEvgxc0LmPDpDEYg1sIqOyGiMicTnC-DtOK0:1w4bi3:C5Cm663AzwApUHzz0GM_qZdkZobo1I9QqWA90xEdUmw",
+    "expire_date": "2026-04-06T09:36:31.059Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "7v37whqswq56rloo0asmu7oanstxd70r",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQAP9lz4ZQWpalR-9-A1leUjWQlPZk_HfTpAe9zkzmDY73rbi9p9UtEWYwcPllnsMz1UPEB9d7E6HVbV28OBJx2i5uLabX9Wz_BoV7gRmYokZl0UuUPuNElAeZrZHWMqnInqdRR5u0l5hJBhwDG042JFI4KAOfL9tnN7k:1w7Bow:osukP7NPGOaPA6rEJ3t_oJ67FfVHatXRb__fJ6RLCjg",
+    "expire_date": "2026-04-13T12:34:18.796Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "kmhgv1cjrl6jifjirt1adckxuw25mgwm",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQAP9lz4ZQWpalR-9-A1leUjWQlPZk_HfTpAe9zkzmDY73rbi9p9UtEWYwcPllnsMz1UPEB9d7E6HVbV28OBJx2i5uLabX9Wz_BoV7gRmYokZl0UuUPuNElAeZrZHWMqnInqdRR5u0l5hJBhwDG042JFI4KAOfL9tnN7k:1w4xDj:uNPOE61gqqGgCmTsSW6q6tfoDR8cjMdfViyX1fsLuQA",
+    "expire_date": "2026-04-07T08:34:39.941Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "pqnn8qoab7vzmt3o4xfcb7ygxh4hbs75",
+  "fields": {
+    "session_data": ".eJxVjEsOwiAUAO_y1oZA-Xfp3jMQHjykaiAp7cp4d9OkC93OTOYNIe5bDfugNSwZZhBw-WUY05PaIfIjtntnqbdtXZAdCTvtYLee6XU9279BjaPCDJNXiCIlrWS2QpDmvhBlEyOR46qgwuKlm3xRGtGoLLmwBqVD9M5KDp8v9hU4Bg:1w4iFx:1JE_uzCg3bHm-H5-EPIbiOJyggNUinFWgUFe4p7FBmk",
+    "expire_date": "2026-04-06T16:35:57.397Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xx9ifvhwyj2ptk6qeh5l5f1wg5r8sr4n",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQAP9lz4ZQWpalR-9-A1leUjWQlPZk_HfTpAe9zkzmDY73rbi9p9UtEWYwcPllnsMz1UPEB9d7E6HVbV28OBJx2i5uLabX9Wz_BoV7gRmYokZl0UuUPuNElAeZrZHWMqnInqdRR5u0l5hJBhwDG042JFI4KAOfL9tnN7k:1w4crf:SQP515P50Zup6OaE3LLLrI-vCB9xJeNuU58mlGXllUk",
+    "expire_date": "2026-04-06T10:50:31.515Z"
+  }
+},
+{
+  "model": "accounts.customuser",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$IKDE4EdGlKcwDYHaeUwIyM$P6DgdXtwNbglCxzpOsD3kkmZ8ITiixNRKUVVCnovlW4=",
+    "last_login": "2026-03-23T16:35:57.240Z",
+    "is_superuser": true,
+    "email": "shailesh@legaledge.in",
+    "name": "Shailesh Bhange",
+    "role": "admin",
+    "team_id": null,
+    "avatar": "SB",
+    "is_active": true,
+    "is_staff": true,
+    "date_joined": "2026-03-23T09:10:03.315Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.customuser",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$vylJK0tMbvrSZwTOrDInLx$oCLyyjQtYQd4hu5xE91EVS9tnunbh2JzFd9CtQhUzdQ=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "arjun@legaledge.in",
+    "name": "Arjun Mehta",
+    "role": "manager",
+    "team_id": "team_01",
+    "avatar": "AM",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2026-03-23T09:10:06.704Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.customuser",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$w90EfmxvWw8rXvEG3q7uxR$UMh4Mo+TQgOsWxOsJBe5bfSe9Ob0fXNaKZUhksRcR+s=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "priya@legaledge.in",
+    "name": "Priya Sharma",
+    "role": "user",
+    "team_id": "team_01",
+    "avatar": "PS",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2026-03-23T09:10:10.564Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.customuser",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$ylx2UljIjoAE4N159RNsbl$Uw0DcX3d3p2k3lw7BALrEHk/dZ2RVT4TDRSUz/Jr7u0=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "rohan@legaledge.in",
+    "name": "Rohan Verma",
+    "role": "user",
+    "team_id": "team_01",
+    "avatar": "RV",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2026-03-23T09:10:14.859Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.customuser",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$Q63RhRs8gv4hT4CaM6Rywe$XXo/diVRUTT8sZFdqIlSTpG1dXP7SHlrn4G/8MDdcbY=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "neha@legaledge.in",
+    "name": "Neha Singh",
+    "role": "user",
+    "team_id": "team_02",
+    "avatar": "NS",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2026-03-23T09:10:20.052Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.customuser",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$9dHmMKxCtwSr4T7XM7HNFU$5cky8eQ8D/6NHGXisIp7ec05DZOZS0QD7VyCP0dwJ7A=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "aman@legaledge.in",
+    "name": "Aman Jha",
+    "role": "user",
+    "team_id": "team_02",
+    "avatar": "AJ",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2026-03-23T09:10:25.221Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.customuser",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$4Olgm1K4hJoJxltKLX6g1a$JBoAbryUSpc0IOhqHhrTaGqyRHwXy3tiHrXiE1V4hsU=",
+    "last_login": "2026-03-30T12:34:18.777Z",
+    "is_superuser": true,
+    "email": "ramp@gmail.com",
+    "name": "ram",
+    "role": "admin",
+    "team_id": null,
+    "avatar": "R",
+    "is_active": true,
+    "is_staff": true,
+    "date_joined": "2026-03-23T09:35:08.881Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.customuser",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$IozTpzCZ21qGso1cM8UnFt$jpqhqNqa8pOJsn+WmDYsq0bR9rFdOvit9Ui7Ea7RwoY=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "smtp.sender@test.local",
+    "name": "SMTP Sender",
+    "role": "user",
+    "team_id": null,
+    "avatar": "SS",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2026-03-24T17:08:03.230Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.customuser",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$yU3mcWrGsvJNqyWd45tIxY$+QYrAhnyqsMKyc7txiOoVZ6p69vBXgDBdohQj+jKYXA=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "smtp.receiver@test.local",
+    "name": "SMTP Receiver",
+    "role": "user",
+    "team_id": null,
+    "avatar": "SR",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2026-03-24T17:08:07.771Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "crm.contact",
+  "pk": 1,
+  "fields": {
+    "name": "Rahul Sharma",
+    "email": "rahul.sharma@techcorp.in",
+    "phone": "+91-9876543210",
+    "company": "TechCorp India",
+    "role": "CEO",
+    "city": "Mumbai",
+    "status": "active",
+    "owner": "Shailesh Bhange",
+    "industry": "Technology",
+    "priority": "High",
+    "type": "Customer",
+    "created": "2026-03-23",
+    "last_contact": null,
+    "assigned_to": [
+      "priya@legaledge.in"
+    ],
+    "team_id": "team_01",
+    "notes": ""
+  }
+},
+{
+  "model": "crm.contact",
+  "pk": 2,
+  "fields": {
+    "name": "Priya Mehta",
+    "email": "priya@legalsolutions.in",
+    "phone": "+91-9871234560",
+    "company": "Legal Solutions Ltd",
+    "role": "Partner",
+    "city": "Delhi",
+    "status": "active",
+    "owner": "Arjun Mehta",
+    "industry": "Legal",
+    "priority": "High",
+    "type": "Lead",
+    "created": "2026-03-23",
+    "last_contact": null,
+    "assigned_to": [
+      "priya@legaledge.in"
+    ],
+    "team_id": "team_01",
+    "notes": ""
+  }
+},
+{
+  "model": "crm.contact",
+  "pk": 3,
+  "fields": {
+    "name": "Amit Joshi",
+    "email": "amit.joshi@finpro.in",
+    "phone": "+91-9823456781",
+    "company": "FinPro Services",
+    "role": "CFO",
+    "city": "Pune",
+    "status": "active",
+    "owner": "Arjun Mehta",
+    "industry": "Finance",
+    "priority": "Medium",
+    "type": "Customer",
+    "created": "2026-03-23",
+    "last_contact": null,
+    "assigned_to": [
+      "rohan@legaledge.in"
+    ],
+    "team_id": "team_01",
+    "notes": ""
+  }
+},
+{
+  "model": "crm.contact",
+  "pk": 4,
+  "fields": {
+    "name": "Sunita Verma",
+    "email": "sunita@medicare.in",
+    "phone": "+91-9756789012",
+    "company": "MediCare Group",
+    "role": "Director",
+    "city": "Hyderabad",
+    "status": "inactive",
+    "owner": "Shailesh Bhange",
+    "industry": "Healthcare",
+    "priority": "Low",
+    "type": "Prospect",
+    "created": "2026-03-23",
+    "last_contact": null,
+    "assigned_to": [
+      "shailesh@legaledge.in"
+    ],
+    "team_id": null,
+    "notes": ""
+  }
+},
+{
+  "model": "crm.contact",
+  "pk": 5,
+  "fields": {
+    "name": "Karan Patel",
+    "email": "karan.patel@retailco.in",
+    "phone": "+91-9845671234",
+    "company": "RetailCo India",
+    "role": "Manager",
+    "city": "Ahmedabad",
+    "status": "active",
+    "owner": "Arjun Mehta",
+    "industry": "Retail",
+    "priority": "Medium",
+    "type": "Lead",
+    "created": "2026-03-23",
+    "last_contact": null,
+    "assigned_to": [
+      "neha@legaledge.in"
+    ],
+    "team_id": "team_02",
+    "notes": ""
+  }
+},
+{
+  "model": "crm.contact",
+  "pk": 6,
+  "fields": {
+    "name": "Meera Nair",
+    "email": "meera@constructpro.in",
+    "phone": "+91-9912345678",
+    "company": "ConstructPro",
+    "role": "VP Sales",
+    "city": "Bangalore",
+    "status": "active",
+    "owner": "Arjun Mehta",
+    "industry": "Construction",
+    "priority": "High",
+    "type": "Customer",
+    "created": "2026-03-23",
+    "last_contact": null,
+    "assigned_to": [
+      "aman@legaledge.in"
+    ],
+    "team_id": "team_02",
+    "notes": ""
+  }
+},
+{
+  "model": "crm.contact",
+  "pk": 7,
+  "fields": {
+    "name": "Sakshi patil",
+    "email": "sakship@gmail.com",
+    "phone": "9876543211",
+    "company": "kavya",
+    "role": "java devloper",
+    "city": "pune",
+    "status": "active",
+    "owner": "Nainika Pounikar",
+    "industry": "Healthcare",
+    "priority": "Medium",
+    "type": "Customer",
+    "created": "2026-03-23",
+    "last_contact": null,
+    "assigned_to": null,
+    "team_id": null,
+    "notes": ""
+  }
+},
+{
+  "model": "crm.contact",
+  "pk": 8,
+  "fields": {
+    "name": "Yash Nikhare",
+    "email": "yash@legaledge.com",
+    "phone": "8625910833",
+    "company": "media",
+    "role": "Content Writer",
+    "city": "Nagpur",
+    "status": "active",
+    "owner": "Nainika Pounikar",
+    "industry": "Technology",
+    "priority": "Low",
+    "type": "Lead",
+    "created": "2026-03-23",
+    "last_contact": null,
+    "assigned_to": null,
+    "team_id": null,
+    "notes": ""
+  }
+},
+{
+  "model": "crm.contact",
+  "pk": 10,
+  "fields": {
+    "name": "Test User",
+    "email": "test@example.com",
+    "phone": "1234567890",
+    "company": "Test Corp",
+    "role": "Manager",
+    "city": "",
+    "status": "active",
+    "owner": "Nainika Pounikar",
+    "industry": "",
+    "priority": "Medium",
+    "type": "Lead",
+    "created": "2026-03-24",
+    "last_contact": null,
+    "assigned_to": null,
+    "team_id": null,
+    "notes": ""
+  }
+},
+{
+  "model": "crm.contact",
+  "pk": 11,
+  "fields": {
+    "name": "Nainika Pounikar",
+    "email": "nainikapounikar16@gmail.com",
+    "phone": "8625910833",
+    "company": "techinfo",
+    "role": "Software developer",
+    "city": "Nagpur",
+    "status": "active",
+    "owner": "Nainika Pounikar",
+    "industry": "Legal",
+    "priority": "Medium",
+    "type": "Lead",
+    "created": "2026-03-25",
+    "last_contact": null,
+    "assigned_to": null,
+    "team_id": null,
+    "notes": ""
+  }
+},
+{
+  "model": "crm.contact",
+  "pk": 12,
+  "fields": {
+    "name": "Navya  Sharma",
+    "email": "navya@legaledge.in",
+    "phone": "8625910833",
+    "company": "Tech Info",
+    "role": "Developer",
+    "city": "Nagpur",
+    "status": "active",
+    "owner": "Nainika Pounikar",
+    "industry": "Technology",
+    "priority": "Medium",
+    "type": "Lead",
+    "created": "2026-03-28",
+    "last_contact": null,
+    "assigned_to": null,
+    "team_id": null,
+    "notes": ""
+  }
+},
+{
+  "model": "crm.contact",
+  "pk": 13,
+  "fields": {
+    "name": "Nainika Pounikar",
+    "email": "nainikapounikar16@gmail.com",
+    "phone": "8625910833",
+    "company": "TechInfo",
+    "role": "CEO",
+    "city": "Nagpur",
+    "status": "active",
+    "owner": "Nainika Pounikar",
+    "industry": "Technology",
+    "priority": "Medium",
+    "type": "Lead",
+    "created": "2026-03-30",
+    "last_contact": null,
+    "assigned_to": null,
+    "team_id": null,
+    "notes": ""
+  }
+},
+{
+  "model": "crm.lead",
+  "pk": 1,
+  "fields": {
+    "name": "Vijay Khanna",
+    "email": "vijay@startupx.in",
+    "phone": "+91-9867890123",
+    "company": "StartupX",
+    "source": "Website",
+    "status": "New",
+    "owner": "Shailesh Bhange",
+    "value": "2,50,000",
+    "temperature": "Hot",
+    "industry": "Technology",
+    "notes": "Interested in enterprise plan",
+    "created": "2026-03-23",
+    "assigned_to": [
+      "priya@legaledge.in"
+    ],
+    "team_id": "team_01"
+  }
+},
+{
+  "model": "crm.lead",
+  "pk": 2,
+  "fields": {
+    "name": "Deepa Singh",
+    "email": "deepa@lawfirm.in",
+    "phone": "+91-9823456780",
+    "company": "Singh & Associates",
+    "source": "Referral",
+    "status": "Contacted",
+    "owner": "Arjun Mehta",
+    "value": "1,80,000",
+    "temperature": "Warm",
+    "industry": "Legal",
+    "notes": "Follow-up scheduled",
+    "created": "2026-03-23",
+    "assigned_to": [
+      "priya@legaledge.in"
+    ],
+    "team_id": "team_01"
+  }
+},
+{
+  "model": "crm.lead",
+  "pk": 3,
+  "fields": {
+    "name": "Rajesh Kumar",
+    "email": "rajesh@mfgco.in",
+    "phone": "+91-9756780123",
+    "company": "MfgCo Industries",
+    "source": "LinkedIn",
+    "status": "Qualified",
+    "owner": "Arjun Mehta",
+    "value": "5,00,000",
+    "temperature": "Hot",
+    "industry": "Manufacturing",
+    "notes": "Budget approved",
+    "created": "2026-03-23",
+    "assigned_to": [
+      "rohan@legaledge.in"
+    ],
+    "team_id": "team_01"
+  }
+},
+{
+  "model": "crm.lead",
+  "pk": 4,
+  "fields": {
+    "name": "Ananya Bose",
+    "email": "ananya@edutech.in",
+    "phone": "+91-9845670123",
+    "company": "EduTech Solutions",
+    "source": "Email Campaign",
+    "status": "New",
+    "owner": "Shailesh Bhange",
+    "value": "75,000",
+    "temperature": "Cold",
+    "industry": "Education",
+    "notes": "Initial inquiry",
+    "created": "2026-03-23",
+    "assigned_to": [
+      "shailesh@legaledge.in"
+    ],
+    "team_id": null
+  }
+},
+{
+  "model": "crm.lead",
+  "pk": 5,
+  "fields": {
+    "name": "Sachin Pawar",
+    "email": "sachin@healthplus.in",
+    "phone": "+91-9912340678",
+    "company": "HealthPlus",
+    "source": "Event",
+    "status": "Negotiation",
+    "owner": "Arjun Mehta",
+    "value": "3,50,000",
+    "temperature": "Warm",
+    "industry": "Healthcare",
+    "notes": "Pricing discussion",
+    "created": "2026-03-23",
+    "assigned_to": [
+      "neha@legaledge.in"
+    ],
+    "team_id": "team_02"
+  }
+},
+{
+  "model": "crm.lead",
+  "pk": 6,
+  "fields": {
+    "name": "Rahul S",
+    "email": "rahul.s@team1.in",
+    "phone": "9876543210",
+    "company": "TechCorp",
+    "source": "Referral",
+    "status": "New",
+    "owner": "Priya Sharma",
+    "value": "1,00,000",
+    "temperature": "Warm",
+    "industry": "Technology",
+    "notes": "Via colleague referral",
+    "created": "2026-03-23",
+    "assigned_to": [
+      "priya@legaledge.in"
+    ],
+    "team_id": "team_01"
+  }
+},
+{
+  "model": "crm.lead",
+  "pk": 7,
+  "fields": {
+    "name": "Priya Desai",
+    "email": "priya.d@team1.in",
+    "phone": "9123456780",
+    "company": "Desai Law",
+    "source": "Website",
+    "status": "Contacted",
+    "owner": "Priya Sharma",
+    "value": "80,000",
+    "temperature": "Warm",
+    "industry": "Legal",
+    "notes": "Wants consultation",
+    "created": "2026-03-23",
+    "assigned_to": [
+      "priya@legaledge.in"
+    ],
+    "team_id": "team_01"
+  }
+},
+{
+  "model": "crm.lead",
+  "pk": 8,
+  "fields": {
+    "name": "Vikram Nair",
+    "email": "vikram@team1.in",
+    "phone": "9988776655",
+    "company": "Nair Group",
+    "source": "Ads",
+    "status": "Qualified",
+    "owner": "Rohan Verma",
+    "value": "2,20,000",
+    "temperature": "Hot",
+    "industry": "Finance",
+    "notes": "Demo scheduled",
+    "created": "2026-03-23",
+    "assigned_to": [
+      "rohan@legaledge.in"
+    ],
+    "team_id": "team_01"
+  }
+},
+{
+  "model": "crm.lead",
+  "pk": 9,
+  "fields": {
+    "name": "Anita Kapoor",
+    "email": "anita@team2.in",
+    "phone": "9765432100",
+    "company": "Kapoor Inc",
+    "source": "Referral",
+    "status": "Won",
+    "owner": "Neha Singh",
+    "value": "1,50,000",
+    "temperature": "Hot",
+    "industry": "Retail",
+    "notes": "Closed successfully",
+    "created": "2026-03-23",
+    "assigned_to": [
+      "neha@legaledge.in"
+    ],
+    "team_id": "team_02"
+  }
+},
+{
+  "model": "crm.lead",
+  "pk": 10,
+  "fields": {
+    "name": "Suresh Pillai",
+    "email": "suresh@team2.in",
+    "phone": "9654321098",
+    "company": "Pillai Mfg",
+    "source": "Cold Call",
+    "status": "Lost",
+    "owner": "Aman Jha",
+    "value": "50,000",
+    "temperature": "Cold",
+    "industry": "Manufacturing",
+    "notes": "Budget constraint",
+    "created": "2026-03-23",
+    "assigned_to": [
+      "aman@legaledge.in"
+    ],
+    "team_id": "team_02"
+  }
+},
+{
+  "model": "crm.lead",
+  "pk": 11,
+  "fields": {
+    "name": "Rahul",
+    "email": "rahul@legaledge.com",
+    "phone": "9970627510",
+    "company": "Legal Edge",
+    "source": "Website",
+    "status": "Contacted",
+    "owner": "Nainika Pounikar",
+    "value": "56000",
+    "temperature": "Hot",
+    "industry": "Retail",
+    "notes": "Hello..",
+    "created": "2026-03-23",
+    "assigned_to": [
+      "arjun@legaledge.in"
+    ],
+    "team_id": "team_01"
+  }
+},
+{
+  "model": "crm.lead",
+  "pk": 12,
+  "fields": {
+    "name": "Rushikesh",
+    "email": "rushi@legaledge.com",
+    "phone": "9960452344",
+    "company": "Legal Edge",
+    "source": "Website",
+    "status": "Qualified",
+    "owner": "Nainika Pounikar",
+    "value": "45600",
+    "temperature": "Hot",
+    "industry": "Real Estate",
+    "notes": "Hello..",
+    "created": "2026-03-24",
+    "assigned_to": [
+      "arjun@legaledge.in"
+    ],
+    "team_id": "team_01"
+  }
+},
+{
+  "model": "crm.lead",
+  "pk": 13,
+  "fields": {
+    "name": "Rushi",
+    "email": "rushi@legaledge.com",
+    "phone": "8625910833",
+    "company": "Techinfo",
+    "source": "Referral",
+    "status": "Contacted",
+    "owner": "Nainika Pounikar",
+    "value": "450000",
+    "temperature": "Warm",
+    "industry": "Real Estate",
+    "notes": "Hello",
+    "created": "2026-03-24",
+    "assigned_to": [
+      "arjun@legaledge.in"
+    ],
+    "team_id": "team_01"
+  }
+},
+{
+  "model": "crm.lead",
+  "pk": 14,
+  "fields": {
+    "name": "Priya Sharma",
+    "email": "priya@legaledge.com",
+    "phone": "9970627510",
+    "company": "Technobase",
+    "source": "Website",
+    "status": "Qualified",
+    "owner": "Nainika Pounikar",
+    "value": "670000",
+    "temperature": "Hot",
+    "industry": "Real Estate",
+    "notes": "Project Leads",
+    "created": "2026-03-24",
+    "assigned_to": [
+      "arjun@legaledge.in"
+    ],
+    "team_id": "team_01"
+  }
+},
+{
+  "model": "crm.lead",
+  "pk": 15,
+  "fields": {
+    "name": "navya",
+    "email": "navya@legaledge.in",
+    "phone": "9876543221",
+    "company": "infoweb",
+    "source": "LinkedIn",
+    "status": "Contacted",
+    "owner": "Nainika Pounikar",
+    "value": "65000",
+    "temperature": "Hot",
+    "industry": "Education",
+    "notes": "Discuss the Bussiness",
+    "created": "2026-03-25",
+    "assigned_to": [
+      "arjun@legaledge.in"
+    ],
+    "team_id": "team_01"
+  }
+},
+{
+  "model": "crm.deal",
+  "pk": 1,
+  "fields": {
+    "name": "Legal Suite Enterprise",
+    "company": "TechCorp India",
+    "contact": "Rahul Sharma",
+    "value": "500000.00",
+    "stage": "Negotiation",
+    "owner": "Shailesh Bhange",
+    "close_date": "2026-03-31",
+    "probability": 90,
+    "created": "2026-03-23",
+    "assigned_to": [
+      "priya@legaledge.in"
+    ],
+    "team_id": "team_01",
+    "notes": ""
+  }
+},
+{
+  "model": "crm.deal",
+  "pk": 2,
+  "fields": {
+    "name": "CRM Starter Pack",
+    "company": "Legal Solutions Ltd",
+    "contact": "Priya Mehta",
+    "value": "150000.00",
+    "stage": "Proposal",
+    "owner": "Arjun Mehta",
+    "close_date": "2026-04-15",
+    "probability": 50,
+    "created": "2026-03-23",
+    "assigned_to": [
+      "priya@legaledge.in"
+    ],
+    "team_id": "team_01",
+    "notes": ""
+  }
+},
+{
+  "model": "crm.deal",
+  "pk": 3,
+  "fields": {
+    "name": "Analytics Dashboard",
+    "company": "FinPro Services",
+    "contact": "Amit Joshi",
+    "value": "280000.00",
+    "stage": "Contacted",
+    "owner": "Arjun Mehta",
+    "close_date": "2026-04-30",
+    "probability": 30,
+    "created": "2026-03-23",
+    "assigned_to": [
+      "rohan@legaledge.in"
+    ],
+    "team_id": "team_01",
+    "notes": ""
+  }
+},
+{
+  "model": "crm.deal",
+  "pk": 4,
+  "fields": {
+    "name": "Premium Support Plan",
+    "company": "MediCare Group",
+    "contact": "Sunita Verma",
+    "value": "120000.00",
+    "stage": "Closed Won",
+    "owner": "Shailesh Bhange",
+    "close_date": "2026-02-28",
+    "probability": 100,
+    "created": "2026-03-23",
+    "assigned_to": [
+      "shailesh@legaledge.in"
+    ],
+    "team_id": null,
+    "notes": ""
+  }
+},
+{
+  "model": "crm.deal",
+  "pk": 5,
+  "fields": {
+    "name": "Basic CRM License",
+    "company": "RetailCo India",
+    "contact": "Karan Patel",
+    "value": "60000.00",
+    "stage": "New Lead",
+    "owner": "Arjun Mehta",
+    "close_date": "2026-05-01",
+    "probability": 20,
+    "created": "2026-03-23",
+    "assigned_to": [
+      "neha@legaledge.in"
+    ],
+    "team_id": "team_02",
+    "notes": ""
+  }
+},
+{
+  "model": "crm.deal",
+  "pk": 6,
+  "fields": {
+    "name": "Full Platform Bundle",
+    "company": "ConstructPro",
+    "contact": "Meera Nair",
+    "value": "750000.00",
+    "stage": "Proposal",
+    "owner": "Arjun Mehta",
+    "close_date": "2026-04-20",
+    "probability": 60,
+    "created": "2026-03-23",
+    "assigned_to": [
+      "aman@legaledge.in"
+    ],
+    "team_id": "team_02",
+    "notes": ""
+  }
+},
+{
+  "model": "crm.deal",
+  "pk": 7,
+  "fields": {
+    "name": "Audit Module",
+    "company": "Singh & Associates",
+    "contact": "Deepa Singh",
+    "value": "90000.00",
+    "stage": "Closed Lost",
+    "owner": "Arjun Mehta",
+    "close_date": "2026-02-15",
+    "probability": 0,
+    "created": "2026-03-23",
+    "assigned_to": [
+      "priya@legaledge.in"
+    ],
+    "team_id": "team_01",
+    "notes": ""
+  }
+},
+{
+  "model": "crm.deal",
+  "pk": 8,
+  "fields": {
+    "name": "helthcare",
+    "company": "kavya",
+    "contact": "9876553432",
+    "value": "120000.00",
+    "stage": "Contacted",
+    "owner": "Nainika Pounikar",
+    "close_date": null,
+    "probability": 50,
+    "created": "2026-03-23",
+    "assigned_to": null,
+    "team_id": null,
+    "notes": ""
+  }
+},
+{
+  "model": "crm.task",
+  "pk": 1,
+  "fields": {
+    "title": "Follow-up call with Priya Mehta",
+    "type": "Call",
+    "priority": "High",
+    "due_date": "2026-03-15",
+    "status": "Completed",
+    "owner": "Shailesh Bhange",
+    "related": "Lead: Priya Mehta",
+    "notes": "Discuss enterprise pricing",
+    "assigned_to": [
+      "priya@legaledge.in"
+    ],
+    "team_id": "team_01",
+    "created": "2026-03-23T09:10:30.386Z"
+  }
+},
+{
+  "model": "crm.task",
+  "pk": 2,
+  "fields": {
+    "title": "Send proposal to TechCorp",
+    "type": "Email",
+    "priority": "High",
+    "due_date": "2026-03-16",
+    "status": "Completed",
+    "owner": "Arjun Mehta",
+    "related": "Deal: Legal Suite Enterprise",
+    "notes": "Include case studies",
+    "assigned_to": [
+      "priya@legaledge.in"
+    ],
+    "team_id": "team_01",
+    "created": "2026-03-23T09:10:30.386Z"
+  }
+},
+{
+  "model": "crm.task",
+  "pk": 3,
+  "fields": {
+    "title": "Schedule demo with FinPro",
+    "type": "Meeting",
+    "priority": "Medium",
+    "due_date": "2026-03-17",
+    "status": "Completed",
+    "owner": "Arjun Mehta",
+    "related": "Contact: Amit Joshi",
+    "notes": "Analytics dashboard demo",
+    "assigned_to": [
+      "rohan@legaledge.in"
+    ],
+    "team_id": "team_01",
+    "created": "2026-03-23T09:10:30.386Z"
+  }
+},
+{
+  "model": "crm.task",
+  "pk": 4,
+  "fields": {
+    "title": "Contract review - MediCare",
+    "type": "Document",
+    "priority": "Low",
+    "due_date": "2026-03-20",
+    "status": "Completed",
+    "owner": "Shailesh Bhange",
+    "related": "Deal: Premium Support Plan",
+    "notes": "Final sign-off",
+    "assigned_to": [
+      "shailesh@legaledge.in"
+    ],
+    "team_id": null,
+    "created": "2026-03-23T09:10:30.386Z"
+  }
+},
+{
+  "model": "crm.task",
+  "pk": 5,
+  "fields": {
+    "title": "LinkedIn outreach - EduTech",
+    "type": "Email",
+    "priority": "Medium",
+    "due_date": "2026-03-18",
+    "status": "Completed",
+    "owner": "Arjun Mehta",
+    "related": "Lead: Ananya Bose",
+    "notes": "Connect and share brochure",
+    "assigned_to": [
+      "neha@legaledge.in"
+    ],
+    "team_id": "team_02",
+    "created": "2026-03-23T09:10:30.386Z"
+  }
+},
+{
+  "model": "crm.task",
+  "pk": 6,
+  "fields": {
+    "title": "Site visit - ConstructPro",
+    "type": "Meeting",
+    "priority": "High",
+    "due_date": "2026-03-19",
+    "status": "Completed",
+    "owner": "Arjun Mehta",
+    "related": "Deal: Full Platform Bundle",
+    "notes": "Meet VP Sales team",
+    "assigned_to": [
+      "aman@legaledge.in"
+    ],
+    "team_id": "team_02",
+    "created": "2026-03-23T09:10:30.386Z"
+  }
+},
+{
+  "model": "crm.task",
+  "pk": 7,
+  "fields": {
+    "title": "Follow-up call with Rahul",
+    "type": "Call",
+    "priority": "High",
+    "due_date": "2026-03-15",
+    "status": "Completed",
+    "owner": "Priya Sharma",
+    "related": "Lead: Rahul S",
+    "notes": "",
+    "assigned_to": [
+      "priya@legaledge.in"
+    ],
+    "team_id": "team_01",
+    "created": "2026-03-23T09:10:30.387Z"
+  }
+},
+{
+  "model": "crm.task",
+  "pk": 8,
+  "fields": {
+    "title": "Send retainer draft to Priya Desai",
+    "type": "Document",
+    "priority": "High",
+    "due_date": "2026-03-15",
+    "status": "Completed",
+    "owner": "Priya Sharma",
+    "related": "Lead: Priya Desai",
+    "notes": "",
+    "assigned_to": [
+      "priya@legaledge.in"
+    ],
+    "team_id": "team_01",
+    "created": "2026-03-23T09:10:30.387Z"
+  }
+},
+{
+  "model": "crm.task",
+  "pk": 9,
+  "fields": {
+    "title": "Update case notes - Anita",
+    "type": "Document",
+    "priority": "Medium",
+    "due_date": "2026-03-15",
+    "status": "Completed",
+    "owner": "Priya Sharma",
+    "related": "Lead: Anita Kapoor",
+    "notes": "",
+    "assigned_to": [
+      "priya@legaledge.in"
+    ],
+    "team_id": "team_01",
+    "created": "2026-03-23T09:10:30.387Z"
+  }
+},
+{
+  "model": "crm.task",
+  "pk": 10,
+  "fields": {
+    "title": "E2E Check Task",
+    "type": "Call",
+    "priority": "High",
+    "due_date": "2026-03-24",
+    "status": "Completed",
+    "owner": "E2E Runner",
+    "related": "E2E",
+    "notes": "Created by e2e check",
+    "assigned_to": null,
+    "team_id": null,
+    "created": "2026-03-23T13:31:13.015Z"
+  }
+},
+{
+  "model": "crm.task",
+  "pk": 12,
+  "fields": {
+    "title": "Follow-up with Riya",
+    "type": "Email",
+    "priority": "High",
+    "due_date": "2026-03-23",
+    "status": "Completed",
+    "owner": "Nainika Pounikar",
+    "related": "Bussiness",
+    "notes": "Hello.. connect as soon as possible",
+    "assigned_to": [
+      "shailesh@legaledge.in"
+    ],
+    "team_id": null,
+    "created": "2026-03-23T13:55:59.119Z"
+  }
+},
+{
+  "model": "crm.task",
+  "pk": 13,
+  "fields": {
+    "title": "Follow-up Meeting",
+    "type": "Call",
+    "priority": "High",
+    "due_date": "2026-03-24",
+    "status": "In Progress",
+    "owner": "Nainika Pounikar",
+    "related": "Project",
+    "notes": "Project Advice",
+    "assigned_to": [
+      "arjun@legaledge.in"
+    ],
+    "team_id": "team_01",
+    "created": "2026-03-24T09:32:03.497Z"
+  }
+},
+{
+  "model": "crm.company",
+  "pk": 1,
+  "fields": {
+    "name": "TechCorp India",
+    "industry": "Technology",
+    "size": "500-1000",
+    "city": "Mumbai",
+    "website": "techcorp.in",
+    "revenue": "50 Cr",
+    "contacts": 3,
+    "deals": 2,
+    "status": "Customer",
+    "owner": "Shailesh Bhange",
+    "team_id": "team_01",
+    "created": "2026-03-23"
+  }
+},
+{
+  "model": "crm.company",
+  "pk": 2,
+  "fields": {
+    "name": "Legal Solutions Ltd",
+    "industry": "Legal",
+    "size": "50-200",
+    "city": "Delhi",
+    "website": "legalsolutions.in",
+    "revenue": "15 Cr",
+    "contacts": 2,
+    "deals": 1,
+    "status": "Prospect",
+    "owner": "Arjun Mehta",
+    "team_id": "team_01",
+    "created": "2026-03-23"
+  }
+},
+{
+  "model": "crm.company",
+  "pk": 3,
+  "fields": {
+    "name": "FinPro Services",
+    "industry": "Finance",
+    "size": "200-500",
+    "city": "Pune",
+    "website": "finpro.in",
+    "revenue": "30 Cr",
+    "contacts": 1,
+    "deals": 1,
+    "status": "Customer",
+    "owner": "Arjun Mehta",
+    "team_id": "team_01",
+    "created": "2026-03-23"
+  }
+},
+{
+  "model": "crm.company",
+  "pk": 4,
+  "fields": {
+    "name": "MediCare Group",
+    "industry": "Healthcare",
+    "size": "1000+",
+    "city": "Hyderabad",
+    "website": "medicare.in",
+    "revenue": "200 Cr",
+    "contacts": 2,
+    "deals": 2,
+    "status": "Customer",
+    "owner": "Shailesh Bhange",
+    "team_id": null,
+    "created": "2026-03-23"
+  }
+},
+{
+  "model": "crm.company",
+  "pk": 5,
+  "fields": {
+    "name": "RetailCo India",
+    "industry": "Retail",
+    "size": "100-500",
+    "city": "Ahmedabad",
+    "website": "retailco.in",
+    "revenue": "80 Cr",
+    "contacts": 1,
+    "deals": 1,
+    "status": "Lead",
+    "owner": "Arjun Mehta",
+    "team_id": "team_02",
+    "created": "2026-03-23"
+  }
+},
+{
+  "model": "crm.ticket",
+  "pk": 1,
+  "fields": {
+    "title": "Cannot login to CRM",
+    "contact": "Rahul Sharma",
+    "company": "TechCorp India",
+    "priority": "High",
+    "status": "Open",
+    "category": "Technical",
+    "owner": "Shailesh Bhange",
+    "team_id": "team_01",
+    "created": "2026-03-23",
+    "notes": ""
+  }
+},
+{
+  "model": "crm.ticket",
+  "pk": 2,
+  "fields": {
+    "title": "Invoice discrepancy",
+    "contact": "Priya Mehta",
+    "company": "Legal Solutions Ltd",
+    "priority": "Medium",
+    "status": "In Progress",
+    "category": "Billing",
+    "owner": "Arjun Mehta",
+    "team_id": "team_01",
+    "created": "2026-03-23",
+    "notes": ""
+  }
+},
+{
+  "model": "crm.ticket",
+  "pk": 3,
+  "fields": {
+    "title": "Feature request - bulk import",
+    "contact": "Amit Joshi",
+    "company": "FinPro Services",
+    "priority": "Low",
+    "status": "Open",
+    "category": "Feature Request",
+    "owner": "Arjun Mehta",
+    "team_id": "team_01",
+    "created": "2026-03-23",
+    "notes": ""
+  }
+},
+{
+  "model": "crm.ticket",
+  "pk": 4,
+  "fields": {
+    "title": "API integration help",
+    "contact": "Meera Nair",
+    "company": "ConstructPro",
+    "priority": "High",
+    "status": "Closed",
+    "category": "Technical",
+    "owner": "Shailesh Bhange",
+    "team_id": "team_02",
+    "created": "2026-03-23",
+    "notes": ""
+  }
+},
+{
+  "model": "crm.calllog",
+  "pk": 1,
+  "fields": {
+    "contact": "Rahul Sharma",
+    "phone": "+91-9876543210",
+    "duration": "8:32",
+    "status": "Answered",
+    "date": "2026-03-10",
+    "time": "10:15 AM",
+    "type": "Outbound",
+    "notes": "Discussed enterprise pricing",
+    "team_id": "team_01",
+    "created": "2026-03-23T09:10:30.476Z"
+  }
+},
+{
+  "model": "crm.calllog",
+  "pk": 2,
+  "fields": {
+    "contact": "Priya Mehta",
+    "phone": "+91-9871234560",
+    "duration": "3:45",
+    "status": "Missed",
+    "date": "2026-03-10",
+    "time": "11:30 AM",
+    "type": "Inbound",
+    "notes": "",
+    "team_id": "team_01",
+    "created": "2026-03-23T09:10:30.476Z"
+  }
+},
+{
+  "model": "crm.calllog",
+  "pk": 3,
+  "fields": {
+    "contact": "Amit Joshi",
+    "phone": "+91-9823456781",
+    "duration": "12:08",
+    "status": "Answered",
+    "date": "2026-03-09",
+    "time": "02:00 PM",
+    "type": "Outbound",
+    "notes": "Demo scheduled for next week",
+    "team_id": "team_01",
+    "created": "2026-03-23T09:10:30.476Z"
+  }
+},
+{
+  "model": "crm.calllog",
+  "pk": 4,
+  "fields": {
+    "contact": "Meera Nair",
+    "phone": "+91-9912345678",
+    "duration": "5:20",
+    "status": "Answered",
+    "date": "2026-03-08",
+    "time": "04:30 PM",
+    "type": "Outbound",
+    "notes": "Contract review discussed",
+    "team_id": "team_02",
+    "created": "2026-03-23T09:10:30.477Z"
+  }
+},
+{
+  "model": "crm.meeting",
+  "pk": 1,
+  "fields": {
+    "title": "Product Demo - TechCorp",
+    "type": "Video Call",
+    "date": "2026-03-12",
+    "time": "11:00 AM",
+    "contact": "Rahul Sharma",
+    "duration": "1 hour",
+    "platform": "zoom",
+    "notes": "Full platform demo",
+    "team_id": "team_01",
+    "created": "2026-03-23T09:10:30.504Z"
+  }
+},
+{
+  "model": "crm.meeting",
+  "pk": 2,
+  "fields": {
+    "title": "Pricing Discussion - FinPro",
+    "type": "Meeting",
+    "date": "2026-03-14",
+    "time": "03:00 PM",
+    "contact": "Amit Joshi",
+    "duration": "45 min",
+    "platform": "gmeet",
+    "notes": "Discuss enterprise pricing",
+    "team_id": "team_01",
+    "created": "2026-03-23T09:10:30.504Z"
+  }
+},
+{
+  "model": "crm.meeting",
+  "pk": 3,
+  "fields": {
+    "title": "Onboarding Kickoff - MediCare",
+    "type": "Video Call",
+    "date": "2026-03-18",
+    "time": "10:00 AM",
+    "contact": "Sunita Verma",
+    "duration": "1 hour",
+    "platform": "teams",
+    "notes": "Welcome and setup",
+    "team_id": null,
+    "created": "2026-03-23T09:10:30.505Z"
+  }
+},
+{
+  "model": "crm.meeting",
+  "pk": 5,
+  "fields": {
+    "title": "E2E Check Meeting",
+    "type": "Meeting",
+    "date": "2026-03-23",
+    "time": "19:10",
+    "contact": "E2E Contact",
+    "duration": "30 mins",
+    "platform": "zoom",
+    "notes": "Created by e2e check",
+    "team_id": null,
+    "created": "2026-03-23T13:31:12.715Z"
+  }
+},
+{
+  "model": "crm.meeting",
+  "pk": 7,
+  "fields": {
+    "title": "Healthcare Project Bussiness Meeting",
+    "type": "Meeting",
+    "date": "2026-03-23",
+    "time": "21:24",
+    "contact": "Rakul Preet",
+    "duration": "30 mins",
+    "platform": "gmeet",
+    "notes": "Discuss about appointments",
+    "team_id": null,
+    "created": "2026-03-23T13:54:36.577Z"
+  }
+},
+{
+  "model": "crm.meeting",
+  "pk": 8,
+  "fields": {
+    "title": "Healthcare Bussiness",
+    "type": "Meeting",
+    "date": "2026-03-23",
+    "time": "20:40",
+    "contact": "Riya Kapoor",
+    "duration": "30 mins",
+    "platform": "gmeet",
+    "notes": "Disscuss About doctoor appointments",
+    "team_id": null,
+    "created": "2026-03-23T14:10:20.909Z"
+  }
+},
+{
+  "model": "crm.meeting",
+  "pk": 9,
+  "fields": {
+    "title": "Project Hospital Management",
+    "type": "Meeting",
+    "date": "2026-03-23",
+    "time": "23:34",
+    "contact": "Rahul Verma",
+    "duration": "30 mins",
+    "platform": "gmeet",
+    "notes": "Discuss Project",
+    "team_id": null,
+    "created": "2026-03-23T17:02:54.516Z"
+  }
+},
+{
+  "model": "crm.meeting",
+  "pk": 10,
+  "fields": {
+    "title": "Project Meeting",
+    "type": "Meeting",
+    "date": "2026-03-24",
+    "time": "14:49",
+    "contact": "Navya",
+    "duration": "30 mins",
+    "platform": "gmeet",
+    "notes": "Discuss Meeting",
+    "team_id": null,
+    "created": "2026-03-24T07:18:16.557Z"
+  }
+},
+{
+  "model": "crm.meeting",
+  "pk": 11,
+  "fields": {
+    "title": "Medical Project",
+    "type": "Meeting",
+    "date": "2026-03-24",
+    "time": "16:01",
+    "contact": "Navya Sharma",
+    "duration": "1 hour",
+    "platform": "gmeet",
+    "notes": "Discuss about medicines",
+    "team_id": null,
+    "created": "2026-03-24T08:31:47.416Z"
+  }
+},
+{
+  "model": "crm.meeting",
+  "pk": 12,
+  "fields": {
+    "title": "Project Details",
+    "type": "Meeting",
+    "date": "2026-03-24",
+    "time": "22:54",
+    "contact": "Navya Sharma",
+    "duration": "30 mins",
+    "platform": "gmeet",
+    "notes": "Discuss about Business flow",
+    "team_id": null,
+    "created": "2026-03-24T15:25:12.383Z"
+  }
+},
+{
+  "model": "crm.meeting",
+  "pk": 13,
+  "fields": {
+    "title": "Project Meeting",
+    "type": "Meeting",
+    "date": "2026-03-25",
+    "time": "12:30",
+    "contact": "Nitin Raut",
+    "duration": "1 hour",
+    "platform": "gmeet",
+    "notes": "Discuss about project",
+    "team_id": null,
+    "created": "2026-03-25T04:59:11.532Z"
+  }
+},
+{
+  "model": "crm.meeting",
+  "pk": 14,
+  "fields": {
+    "title": "Teams Meet",
+    "type": "Meeting",
+    "date": "2026-03-25",
+    "time": "18:30",
+    "contact": "Navya Sharma",
+    "duration": "1 hour",
+    "platform": "teams",
+    "notes": "Discuss about CRM project",
+    "team_id": null,
+    "created": "2026-03-25T07:55:28.623Z"
+  }
+},
+{
+  "model": "crm.meeting",
+  "pk": 15,
+  "fields": {
+    "title": "Project Meet",
+    "type": "Meeting",
+    "date": "2026-03-26",
+    "time": "20:44",
+    "contact": "Nainika Pounikar",
+    "duration": "30 mins",
+    "platform": "gmeet",
+    "notes": "Discuss about CRM project",
+    "team_id": null,
+    "created": "2026-03-25T13:11:39.890Z"
+  }
+},
+{
+  "model": "crm.meeting",
+  "pk": 16,
+  "fields": {
+    "title": "Project CRM",
+    "type": "Meeting",
+    "date": "2026-03-28",
+    "time": "18:04",
+    "contact": "Ojasvi Pounikar",
+    "duration": "30 mins",
+    "platform": "gmeet",
+    "notes": "Discuss about bussiness",
+    "team_id": null,
+    "created": "2026-03-28T09:34:23.542Z"
+  }
+},
+{
+  "model": "crm.meeting",
+  "pk": 17,
+  "fields": {
+    "title": "Project CRM",
+    "type": "Meeting",
+    "date": "2026-03-30",
+    "time": "19:30",
+    "contact": "Navya Sharma",
+    "duration": "30 mins",
+    "platform": "gmeet",
+    "notes": "Discuss all the CRM Issue",
+    "team_id": null,
+    "created": "2026-03-30T12:00:58.237Z"
+  }
+},
+{
+  "model": "crm.meeting",
+  "pk": 18,
+  "fields": {
+    "title": "Project CRM",
+    "type": "Meeting",
+    "date": "2026-03-31",
+    "time": "19:05",
+    "contact": "Nitin Deshmukh",
+    "duration": "30 mins",
+    "platform": "gmeet",
+    "notes": "Discuss About CRM",
+    "team_id": null,
+    "created": "2026-03-30T12:36:09.407Z"
+  }
+},
+{
+  "model": "crm.activity",
+  "pk": 34,
+  "fields": {
+    "entity": "meeting",
+    "entity_id": 17,
+    "action": "created",
+    "detail": "Meeting Project CRM",
+    "owner": "Shailesh Bhange",
+    "at": "2026-03-30T12:01:02.859Z",
+    "user": [
+      "shailesh@legaledge.in"
+    ],
+    "team_id": null
+  }
+},
+{
+  "model": "crm.activity",
+  "pk": 35,
+  "fields": {
+    "entity": "meeting",
+    "entity_id": 18,
+    "action": "created",
+    "detail": "Meeting Project CRM",
+    "owner": "Shailesh Bhange",
+    "at": "2026-03-30T12:36:09.542Z",
+    "user": [
+      "shailesh@legaledge.in"
+    ],
+    "team_id": null
+  }
+},
+{
+  "model": "crm.marketingcampaign",
+  "pk": 1,
+  "fields": {
+    "local_id": "1774428305353",
+    "payload": {
+      "name": "Master Project",
+      "type": "email",
+      "description": "Working on the Campgien related work",
+      "status": "Active",
+      "id": "1774428305353",
+      "createdDate": "25 Mar 2026"
+    },
+    "user": [
+      "arjun@legaledge.in"
+    ],
+    "team_id": "team_01",
+    "created_at": "2026-03-25T08:45:05.836Z",
+    "updated_at": "2026-03-25T08:45:05.837Z"
+  }
+},
+{
+  "model": "crm.marketingform",
+  "pk": 1,
+  "fields": {
+    "local_id": "1774376032106",
+    "payload": {
+      "name": "Demo Request",
+      "type": "Contact Us",
+      "status": "Active",
+      "linkedCampaign": "Q1 Campaign",
+      "targetAudience": "B2B",
+      "afterSubmission": "Show Thank-You Message",
+      "owner": "Nainika",
+      "notes": "",
+      "gdprConsent": true,
+      "recaptcha": false,
+      "emailNotif": true,
+      "id": "1774376032106",
+      "createdDate": "24 Mar 2026"
+    },
+    "user": [
+      "shailesh@legaledge.in"
+    ],
+    "team_id": null,
+    "created_at": "2026-03-24T18:13:52.175Z",
+    "updated_at": "2026-03-24T18:13:52.175Z"
+  }
+},
+{
+  "model": "crm.emailmessagerecord",
+  "pk": 1,
+  "fields": {
+    "owner": [
+      "smtp.receiver@test.local"
+    ],
+    "sender": [
+      "smtp.sender@test.local"
+    ],
+    "receiver": [
+      "smtp.receiver@test.local"
+    ],
+    "sender_email": "smtp.sender@test.local",
+    "receiver_email": "smtp.receiver@test.local",
+    "account": null,
+    "folder": "inbox",
+    "provider": "internal",
+    "external_id": "",
+    "thread_id": "",
+    "in_reply_to": "",
+    "from_email": "smtp.sender@test.local",
+    "to_email": "smtp.receiver@test.local",
+    "cc": "",
+    "subject": "Internal test",
+    "snippet": "Internal path check",
+    "body": "Internal path check",
+    "direction": "inbound",
+    "unread": true,
+    "is_read": false,
+    "received_at": "2026-03-24T17:08:07.802Z",
+    "synced_at": "2026-03-24T17:08:07.802Z",
+    "created_at": "2026-03-24T17:08:07.805Z"
+  }
+},
+{
+  "model": "crm.emailmessagerecord",
+  "pk": 2,
+  "fields": {
+    "owner": [
+      "smtp.sender@test.local"
+    ],
+    "sender": [
+      "smtp.sender@test.local"
+    ],
+    "receiver": [
+      "smtp.receiver@test.local"
+    ],
+    "sender_email": "smtp.sender@test.local",
+    "receiver_email": "smtp.receiver@test.local",
+    "account": null,
+    "folder": "sent",
+    "provider": "internal",
+    "external_id": "",
+    "thread_id": "",
+    "in_reply_to": "",
+    "from_email": "smtp.sender@test.local",
+    "to_email": "smtp.receiver@test.local",
+    "cc": "",
+    "subject": "Internal test",
+    "snippet": "Internal path check",
+    "body": "Internal path check",
+    "direction": "outbound",
+    "unread": false,
+    "is_read": true,
+    "received_at": "2026-03-24T17:08:07.829Z",
+    "synced_at": "2026-03-24T17:08:07.829Z",
+    "created_at": "2026-03-24T17:08:07.830Z"
+  }
+},
+{
+  "model": "crm.emailmessagerecord",
+  "pk": 3,
+  "fields": {
+    "owner": [
+      "shailesh@legaledge.in"
+    ],
+    "sender": [
+      "shailesh@legaledge.in"
+    ],
+    "receiver": null,
+    "sender_email": "shailesh@legaledge.in",
+    "receiver_email": "nainikapounikar16@gmail.com",
+    "account": null,
+    "folder": "sent",
+    "provider": "gmail",
+    "external_id": "",
+    "thread_id": "smtp-cfa4c3d715734f3a99566d64469df7e9",
+    "in_reply_to": "",
+    "from_email": "arunpounikar3@gmail.com",
+    "to_email": "nainikapounikar16@gmail.com",
+    "cc": "",
+    "subject": "Following up on our conversation",
+    "snippet": "Hi,\n\nI wanted to follow up on our recent conversation and check if you had a chance to review the information we discussed.\n\nPlease let me know if you have any questions or need an",
+    "body": "Hi,\n\nI wanted to follow up on our recent conversation and check if you had a chance to review the information we discussed.\n\nPlease let me know if you have any questions or need any clarification.\n\nLooking forward to hearing from you.\n\nBest regards",
+    "direction": "outbound",
+    "unread": false,
+    "is_read": true,
+    "received_at": "2026-03-25T04:50:53.078Z",
+    "synced_at": "2026-03-25T04:50:53.078Z",
+    "created_at": "2026-03-25T04:50:53.080Z"
+  }
+},
+{
+  "model": "crm.emailmessagerecord",
+  "pk": 5,
+  "fields": {
+    "owner": [
+      "shailesh@legaledge.in"
+    ],
+    "sender": [
+      "shailesh@legaledge.in"
+    ],
+    "receiver": null,
+    "sender_email": "shailesh@legaledge.in",
+    "receiver_email": "nainikapounikar16@gmail.com",
+    "account": null,
+    "folder": "sent",
+    "provider": "gmail",
+    "external_id": "",
+    "thread_id": "smtp-b82c70b466d346d78a69ef92619ec977",
+    "in_reply_to": "",
+    "from_email": "arunpounikar3@gmail.com",
+    "to_email": "nainikapounikar16@gmail.com",
+    "cc": "",
+    "subject": "Following up on our conversation",
+    "snippet": "Hi,\n\nI wanted to follow up on our recent conversation and check if you had a chance to review the information we discussed.\n\nPlease let me know if you have any questions or need an",
+    "body": "Hi,\n\nI wanted to follow up on our recent conversation and check if you had a chance to review the information we discussed.\n\nPlease let me know if you have any questions or need any clarification.\n\nLooking forward to hearing from you.\n\nBest regards",
+    "direction": "outbound",
+    "unread": false,
+    "is_read": true,
+    "received_at": "2026-03-25T04:50:55.721Z",
+    "synced_at": "2026-03-25T04:50:55.721Z",
+    "created_at": "2026-03-25T04:50:55.724Z"
+  }
+},
+{
+  "model": "crm.emailmessagerecord",
+  "pk": 6,
+  "fields": {
+    "owner": [
+      "shailesh@legaledge.in"
+    ],
+    "sender": [
+      "shailesh@legaledge.in"
+    ],
+    "receiver": null,
+    "sender_email": "shailesh@legaledge.in",
+    "receiver_email": "nainikapounikar16@gmail.com",
+    "account": null,
+    "folder": "sent",
+    "provider": "gmail",
+    "external_id": "",
+    "thread_id": "smtp-d434abc5ab8f415e9c30fb179d711027",
+    "in_reply_to": "",
+    "from_email": "arunpounikar3@gmail.com",
+    "to_email": "nainikapounikar16@gmail.com",
+    "cc": "",
+    "subject": "Following up on our conversation",
+    "snippet": "Hi,\n\nI wanted to follow up on our recent conversation and check if you had a chance to review the information we discussed.\n\nPlease let me know if you have any questions or need an",
+    "body": "Hi,\n\nI wanted to follow up on our recent conversation and check if you had a chance to review the information we discussed.\n\nPlease let me know if you have any questions or need any clarification.\n\nLooking forward to hearing from you.\n\nBest regards",
+    "direction": "outbound",
+    "unread": false,
+    "is_read": true,
+    "received_at": "2026-03-25T04:50:55.917Z",
+    "synced_at": "2026-03-25T04:50:55.917Z",
+    "created_at": "2026-03-25T04:50:55.918Z"
+  }
+},
+{
+  "model": "crm.emailmessagerecord",
+  "pk": 7,
+  "fields": {
+    "owner": [
+      "shailesh@legaledge.in"
+    ],
+    "sender": [
+      "shailesh@legaledge.in"
+    ],
+    "receiver": null,
+    "sender_email": "shailesh@legaledge.in",
+    "receiver_email": "nainikapounikar16@gmail.com",
+    "account": null,
+    "folder": "sent",
+    "provider": "gmail",
+    "external_id": "",
+    "thread_id": "smtp-56a88470af834601bf415fb0e9ac0ab7",
+    "in_reply_to": "",
+    "from_email": "arunpounikar3@gmail.com",
+    "to_email": "nainikapounikar16@gmail.com",
+    "cc": "",
+    "subject": "LegalEdge CRM Proposal",
+    "snippet": "Hi,\n\nThank you for your interest in LegalEdge CRM. Please find below the proposal details tailored to your requirements.\n\nOur solution includes:\n- Complete CRM platform\n- Dedicated",
+    "body": "Hi,\n\nThank you for your interest in LegalEdge CRM. Please find below the proposal details tailored to your requirements.\n\nOur solution includes:\n- Complete CRM platform\n- Dedicated onboarding support\n- 24/7 customer service\n\nWe'd love to schedule a quick call to walk you through the details.\n\nBest regards\n\nBest regards,\nShailesh Bhange",
+    "direction": "outbound",
+    "unread": false,
+    "is_read": true,
+    "received_at": "2026-03-25T05:46:50.490Z",
+    "synced_at": "2026-03-25T05:46:50.490Z",
+    "created_at": "2026-03-25T05:46:50.492Z"
+  }
+},
+{
+  "model": "crm.emailmessagerecord",
+  "pk": 8,
+  "fields": {
+    "owner": [
+      "priya@legaledge.in"
+    ],
+    "sender": [
+      "priya@legaledge.in"
+    ],
+    "receiver": null,
+    "sender_email": "priya@legaledge.in",
+    "receiver_email": "rahul.sharma@techcorp.in",
+    "account": null,
+    "folder": "sent",
+    "provider": "gmail",
+    "external_id": "",
+    "thread_id": "smtp-92474cbca29d402b899f06f320c653a2",
+    "in_reply_to": "",
+    "from_email": "arunpounikar3@gmail.com",
+    "to_email": "rahul.sharma@techcorp.in",
+    "cc": "",
+    "subject": "Following up on our conversation",
+    "snippet": "Hi,\n\nI wanted to follow up on our recent conversation and check if you had a chance to review the information we discussed.\n\nPlease let me know if you have any questions or need an",
+    "body": "Hi,\n\nI wanted to follow up on our recent conversation and check if you had a chance to review the information we discussed.\n\nPlease let me know if you have any questions or need any clarification.\n\nLooking forward to hearing from you.\n\nBest regards",
+    "direction": "outbound",
+    "unread": false,
+    "is_read": true,
+    "received_at": "2026-03-25T07:19:58.095Z",
+    "synced_at": "2026-03-25T07:19:58.095Z",
+    "created_at": "2026-03-25T07:19:58.100Z"
+  }
+},
+{
+  "model": "crm.emailmessagerecord",
+  "pk": 9,
+  "fields": {
+    "owner": [
+      "shailesh@legaledge.in"
+    ],
+    "sender": [
+      "shailesh@legaledge.in"
+    ],
+    "receiver": null,
+    "sender_email": "shailesh@legaledge.in",
+    "receiver_email": "rushigade0707@gmail.com",
+    "account": null,
+    "folder": "sent",
+    "provider": "gmail",
+    "external_id": "",
+    "thread_id": "smtp-add57998503a40868935ea0bf6de4257",
+    "in_reply_to": "",
+    "from_email": "arunpounikar3@gmail.com",
+    "to_email": "rushigade0707@gmail.com",
+    "cc": "nainikapounikar16@gmail.com",
+    "subject": "Following up on our conversation",
+    "snippet": "Hi,\n\nI wanted to follow up on our recent conversation and check if you had a chance to review the information we discussed.\n\nPlease let me know if you have any questions or need an",
+    "body": "Hi,\n\nI wanted to follow up on our recent conversation and check if you had a chance to review the information we discussed.\n\nPlease let me know if you have any questions or need any clarification.\n\nLooking forward to hearing from you.\n\nBest regards",
+    "direction": "outbound",
+    "unread": false,
+    "is_read": true,
+    "received_at": "2026-03-25T12:15:32.933Z",
+    "synced_at": "2026-03-25T12:15:32.933Z",
+    "created_at": "2026-03-25T12:15:32.936Z"
+  }
+}
+]

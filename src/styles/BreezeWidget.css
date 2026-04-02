@@ -1,0 +1,142 @@
+/* ══════════════════════════════════════════════════════════════════
+   BreezeWidget.css — LegalEdge CRM
+   Floating trigger + BreezeAI panel responsive overrides
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── Floating trigger button ───────────────────────────────────── */
+.bw-trigger {
+  position:        fixed;
+  bottom:          24px;
+  right:           24px;
+  z-index:         1002;
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  width:           56px;
+  height:          56px;
+  padding:         0;
+  border-radius:   50%;
+  border:          none;
+  cursor:          pointer;
+  background:      linear-gradient(135deg, #0f2440 0%, #1a3a5c 100%);
+  color:           #ffffff;
+  box-shadow:      0 4px 20px rgba(15, 36, 64, 0.5),
+                   0 0 0 1px rgba(212, 168, 67, 0.2);
+  transition:      box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.app-root.sidebar-drawer-open .bw-trigger {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(8px);
+}
+
+.bw-trigger:hover {
+  box-shadow: 0 6px 24px rgba(15, 36, 64, 0.6),
+              0 0 0 1px rgba(212, 168, 67, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Open state */
+.bw-trigger--open {
+  background:  #1e2530;
+  box-shadow:  0 4px 16px rgba(0, 0, 0, 0.45);
+}
+
+.bw-icon {
+  font-size:   20px;
+  line-height: 1;
+  color:       var(--gold, #d4a843);
+}
+
+.bw-trigger--open .bw-icon {
+  font-size: 16px;
+  color:     rgba(255, 255, 255, 0.85);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   BreezeAI panel overrides — Desktop
+   ══════════════════════════════════════════════════════════════════ */
+.breeze-panel {
+  top:        calc(var(--topbar-h, 60px) + 12px) !important;
+  bottom:     auto !important;
+  right:      24px  !important;
+  width:      390px !important;
+  max-height: min(560px, calc(100vh - var(--topbar-h, 60px) - 24px)) !important;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   RESPONSIVE
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── Tablet ────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .bw-trigger {
+    width:  50px;
+    height: 50px;
+    bottom: 20px;
+    right:  20px;
+  }
+
+  .breeze-panel {
+    top:        calc(var(--topbar-h, 60px) + 10px) !important;
+    bottom:     auto !important;
+    width:      340px !important;
+    max-height: min(500px, calc(100vh - var(--topbar-h, 60px) - 20px)) !important;
+    right:      20px  !important;
+  }
+}
+
+/* ── Mobile ────────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .bw-trigger {
+    width:  48px;
+    height: 48px;
+    bottom: 16px;
+    right:  16px;
+  }
+
+  /* Full width panel on mobile */
+  .breeze-panel {
+    top:           calc(var(--topbar-h, 60px) + 8px) !important;
+    bottom:        auto !important;
+    left:          8px               !important;
+    right:         8px               !important;
+    width:         calc(100vw - 16px) !important;
+    max-width:     calc(100vw - 16px) !important;
+    max-height:    calc(100vh - var(--topbar-h, 60px) - 16px) !important;
+    border-radius: 16px              !important;
+  }
+
+  /* Overlay removed — was blocking page interaction */
+}
+
+/* ── Very small screens (≤360px) ──────────────────────────────── */
+@media (max-width: 360px) {
+  .breeze-panel {
+    top:        calc(var(--topbar-h, 60px) + 8px) !important;
+    bottom:     auto !important;
+    left:       4px                !important;
+    right:      4px                !important;
+    width:      calc(100vw - 8px)  !important;
+    max-width:  calc(100vw - 8px)  !important;
+    max-height: calc(100vh - var(--topbar-h, 60px) - 16px) !important;
+  }
+}
+
+/* Keep message/input flow stable and prevent text overlap in chat */
+.breeze-messages {
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+}
+
+.breeze-bubble {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.breeze-input {
+  line-height: 1.4 !important;
+}
