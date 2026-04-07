@@ -5,15 +5,13 @@ Django settings for LegalEdge CRM Backend.
 import os
 from pathlib import Path
 from datetime import timedelta
-from decouple import AutoConfig
 import dj_database_url
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-config = AutoConfig(search_path=BASE_DIR)
 
 # 🔐 SECURITY
-SECRET_KEY = config('SECRET_KEY', default='django-insecure-change-me')
-DEBUG = config('DJANGO_DEBUG', default=False, cast=bool)
+SECRET_KEY = os.environ.get("SECRET_KEY", "django-insecure-key")
+DEBUG = os.environ.get("DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = ["*"]
 
@@ -35,7 +33,7 @@ INSTALLED_APPS = [
     'crm',
 ]
 
-# ⚙️ MIDDLEWARE (CORS TOP PE ⚠️)
+# ⚙️ MIDDLEWARE
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -70,8 +68,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
-# 🗄️ DATABASE (AUTO HANDLE LOCAL + RENDER)
-DATABASE_URL = config('DATABASE_URL', default=None)
+# 🗄️ DATABASE (Render + Local auto handle)
+DATABASE_URL = os.environ.get("DATABASE_URL")
 
 if DATABASE_URL:
     DATABASES = {
@@ -107,14 +105,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-# 🌐 FRONTEND URL
-FRONTEND_URL = config('FRONTEND_URL', default='http://127.0.0.1:5173')
-
-# 🔗 CORS (IMPORTANT 🔥)
+# 🔗 CORS
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 
-# 🔒 CSRF (Render fix)
+# 🔒 CSRF
 CSRF_TRUSTED_ORIGINS = [
     "https://*.onrender.com"
 ]
@@ -142,8 +137,8 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-EMAIL_HOST_USER = config('EMAIL_HOST_USER', default='')
-EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD', default='')
+EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER", "")
+EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD", "")
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 # 🔒 HTTPS FIX (Render)
